@@ -1,0 +1,58 @@
+.sidebar {
+
+    min-width:0px;
+    max-width:0px;
+    position:fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    background: rgba(0,0,0, 0.98);
+    z-index: 1111;
+    color:#F5F5F5;
+    -webkit-transition: all 0.3s ease-in-out; /* Safari */
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: -2px 2px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 2px 18px 0px rgba(0,0,0,0.75);
+}
+
+.sidebar-content {
+    padding:20px;
+    opacity:0;
+}
+
+.sidebar.open .sidebar-content {
+    opacity:1;
+}
+
+.sidebar.open {
+    min-width:300px;
+    max-width:300px;
+}
+
+.siderbar-toggle {
+
+    position:absolute;
+    left:-100px;
+    top:50px;
+    background: inherit;
+    padding:10px;
+    width:100px;
+    cursor:pointer;
+    -webkit-box-shadow: -2px 2px 18px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 18px 0px rgba(0,0,0,0.75);
+    box-shadow: -2px 2px 18px 0px rgba(0,0,0,0.75);
+}
+
+.siderbar-toggle:hover {
+    outline: 1px solid black;
+    background:#F5f5f5;
+    color:black;
+}
+
+.close {
+    color: red;
+    text-shadow: none;
+    font-size: 35px;
+}
+

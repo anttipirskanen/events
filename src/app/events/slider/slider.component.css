@@ -1,0 +1,13 @@
+.slider {
+    
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    height:444px;
+    background:#CCC;
+    overflow:auto;
+    white-space: nowrap;
+    overflow-y:hidden;
+    display: flex;
+}

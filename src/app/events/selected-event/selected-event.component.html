@@ -1,0 +1,9 @@
+<div *ngIf="selectedEvent" class="selected-event" [ngStyle]="{'background-image': 'url('+selectedEvent.image+')'}">
+    <div class="desc-box">
+        <i (click)="deleteThis()" class="fa fa-trash-o delete"></i>
+        <ul>
+            <li><h1>{{selectedEvent.description }}</h1></li>
+            <li><i class="fa fa-calendar"></i>{{selectedEvent.date | date:'dd.MM.yyyy'}}</li>
+        </ul>
+    </div>
+</div>

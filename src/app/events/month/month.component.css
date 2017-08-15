@@ -1,0 +1,31 @@
+.month {
+    min-width: 200px;
+    border-top: 2px solid #CCC;
+    color:#F3F3F3;
+    background:#4d4d4d;
+    height: 100%;
+    border-right:2px solid #C9CEBD;
+}
+
+.month.active {
+    border-top-color:orange;
+}
+
+.month .month-title {
+    text-align:center;
+    background: #424C55;
+    text-transform:uppercase;
+    padding: 10px 0px;
+    font-weight:bold;
+}
+
+.month-events
+{
+    height:100%;
+    white-space: nowrap;
+}
+
+.month-events .event-wrap {
+    display: inline-block;
+}
+

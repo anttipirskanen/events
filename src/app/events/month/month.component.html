@@ -1,0 +1,10 @@
+<div class="month {{ date.getMonth() +'-'+date.getFullYear() }}" [ngClass]="{'active':  date.getMonth() == today.getMonth() && date.getFullYear() == today.getFullYear() }">
+    <div class="month-title">
+        {{ monthNames[ date.getMonth() ] + ' ' + date.getFullYear() }}
+    </div>
+    <div class="month-events">
+        <div *ngFor="let event of events" class="event-wrap">
+            <event *ngIf="event.date.getMonth() == date.getMonth() && event.date.getFullYear() == date.getFullYear()" [event]="event"></event>
+        </div>
+    </div>
+</div>

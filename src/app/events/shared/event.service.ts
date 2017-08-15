@@ -38,11 +38,12 @@ export class EventService {
 }
 
 const EVENTS: Event[] = [
-    {id: 3, description: 'Wonder Woman', date: new Date('2017-5-31'), type: 'movie', image: 'https://cdn.vox-cdn.com/uploads/chorus_asset/file/7751935/2017_The_Wonder_Woman_Gal_Gadot_wide.jpg'},
-    {id: 5, description: 'Tekken 7', date: new Date('2017-6-1'), type: 'game', image: 'https://i.ytimg.com/vi/g4h8o4pWECI/maxresdefault.jpg'},
-    {id: 5, description: 'Dirt 4', date: new Date('2017-6-9'), type: 'game', image: 'https://www.pelaajalehti.com/sites/default/files/imagecache/paakuva_sisalto/kuvat_artikkeli/dirt4.jpg'},
-    {id: 1, description: 'Transformers 5', date: new Date('2017-6-25'), type: 'movie', image: 'http://screenrant.com/wp-content/uploads/Transformers-5-2017-Shared-Universe.jpg'},
-    {id: 4, description: 'Game of Thrones Season 7', date: new Date('2017-7-16'), type: 'tv', image: 'https://static.giantbomb.com/uploads/original/3/31685/2742670-game.jpg'},
-    {id: 2, description: 'Middle-Earth: Shadow of War', date: new Date('2017-10-10'), type: 'game', image: 'https://media.playstation.com/is/image/SCEA/middle-earth-shadow-of-war-listing-thumb-01-ps4-us-17feb17?$Icon$'},
-    {id: 2, description: 'Call of Duty: WWII', date: new Date('2017-11-3'), type: 'game', image: 'https://www.callofduty.com/content/dam/atvi/callofduty/wwii/home/Stronghold_Metadata_Image.jpg'},
+    
+    {id: 1, description: 'Kevät', date: new Date('2017-4-1'), type: 'event', image: ' https://s-media-cache-ak0.pinimg.com/originals/a5/7d/c4/a57dc439039c23f59234a7b95acc94ac.jpg'},    
+    {id: 1, description: 'Kuopio tanssii ja soi', date: new Date('2017-6-14'), type: 'event', image: 'https://static.pexels.com/photos/279315/pexels-photo-279315.jpeg'},
+    {id: 2, description: 'Kuopio juhlii', date: new Date('2017-8-25'), type: 'event', image: 'http://www.technocrazed.com/wp-content/uploads/2015/12/Landscape-wallpaper-7.jpg'},
+    {id: 4, description: 'Testitapahtuma', date: new Date('2017-9-1'), type: 'event', image: 'https://static.pexels.com/photos/36478/amazing-beautiful-beauty-blue.jpg'},
+    {id: 5, description: 'Testitapahtuma2', date: new Date('2017-9-3'), type: 'event', image: 'http://www.blogdelfotografo.com/wp-content/uploads/2014/12/Mariluz-Rodriguez_Elemento-de-inter%C3%A9s-1200x520.jpg'},
+    {id: 6, description: 'Joulu', date: new Date('2017-12-24'), type: 'event', image: 'https://www.pixelstalk.net/wp-content/uploads/2015/12/Superb-winter-landscape-hd-download.jpg'},
+   
 ];

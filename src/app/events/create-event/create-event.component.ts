@@ -25,15 +25,17 @@ export class CreateEventComponent implements OnInit {
       this.showSidebar = false;
       this.newEvent = { id: new Date().getTime(), description: '', date: new Date(), type: 'movie', image: '' };
       this.selectToday();
-      this.imageSearchService.getImages('wonder woman 2017', 10);
     }
 
     createEvent():void {
       var d = new Date(Date.UTC(this.date.year, this.date.month-1, this.date.day));
       this.newEvent.date = d;
+      if(!this.newEvent.image) {
+        this.newEvent.image = 'http://www.guoguiyan.com/data/out/112/69141422-landscape-wallpapers.jpg';
+      }
       this.eventService.addEvent(this.newEvent);
       this.showSidebar = false;
-      this.newEvent = { id: new Date().getTime(), description: '', date: new Date(), type: 'movie', image: '' };
+      this.newEvent = { id: new Date().getTime(), description: '', date: new Date(), type: 'event', image: '' };
     }
 
     private selectToday() {
